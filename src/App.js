@@ -22,7 +22,7 @@ function App() {
           and is{" "}
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://github.com/Natalia-Ploskan/weather-react-app.git"
             target="_blank"
             rel="noopener noreferrer"
           >

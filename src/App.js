@@ -8,19 +8,27 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Weather city="Kyiv" />
-        <Weather city="Lutsk" />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Weather />
+        <small>
+          This app was coded by{" "}
+          <a
+            className="Profile-link"
+            href="https://www.shecodes.io/graduates/49613-nataliia-ploskan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Natalia Ploskan
+          </a>{" "}
+          and is{" "}
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-sourced on GitHub
+          </a>
+        </small>
       </header>
     </div>
   );

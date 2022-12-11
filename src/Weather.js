@@ -43,7 +43,7 @@ export default function Weather(props) {
         </form>
         <h1>Kyiv</h1>
         <ul>
-          <li>
+          <li className="mt-2">
             <FormattedDate date={weatherData.date} />
           </li>
           <li className="text-capitalize">{weatherData.description}</li>
@@ -64,7 +64,7 @@ export default function Weather(props) {
           </div>
           <div className="col-6">
             <ul>
-              <li>Humidity: {weatherData.humidity}%</li>
+              <li>Humidity: {weatherData.humidity} %</li>
               <li>Wind: {Math.round(weatherData.wind)} km/h</li>
             </ul>
           </div>

@@ -8,6 +8,7 @@ body {
   border-radius: 4px;
 }
 .Weather form {
+  margin-bottom: 20px;
 }
 .Weather h1 {
   font-size: 34px;

@@ -36,8 +36,12 @@ export default function Weather(props) {
   if (weatherData.loaded) {
     return (
       <div className="Weather">
+        <div className="shadow-sm p-3 mb-5 bg-white rounded">
+          <WeatherForecast coordinates={weatherData.coordinates} />
+        </div>
+        <WeatherInfo information={weatherData} />
         <form onSubmit={handleSubmit}>
-          <div className="row">
+          <div className="row mt-3">
             <div className="col-9">
               <input
                 type="search"
@@ -57,8 +61,6 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <WeatherInfo information={weatherData} />
-        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
